@@ -20,6 +20,8 @@ namespace SampleApplication
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Kentor.AuthServices.Configuration.Options.GlobalEnableSha256XmlSignatures();
         }
     }
 }
